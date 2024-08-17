@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/User/Register">Register</a>
+            <a href="/User/Login">Login</a>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Your App Name</p>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
